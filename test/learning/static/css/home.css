@@ -1,0 +1,88 @@
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+h1 {
+    color: #ffffff;/*文字色*/
+    padding: 0.5em;/*文字周りの余白*/
+    display: inline-block;/*おまじない*/
+    line-height: 1.3;/*行高*/
+    background: hsl(123, 78%, 61%);/*背景色*/
+    vertical-align: middle;
+    border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+  }
+  
+  h1:before {
+    content: '●';
+    color: white;
+    margin-right: 8px;
+  }
+
+  h2 {
+    border-bottom: solid 3px #cce4ff;
+    position: relative;
+  }
+  
+  h2:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #2bf672;
+    bottom: -3px;
+    width: 20%;
+  }
+  
+  a {
+    color: #f4ecec;/*文字色*/
+    font-weight: 500;
+    padding: 0.6em;/*文字周りの余白*/
+    display: inline-block;/*おまじない*/
+    line-height: 1;/*行高*/
+    background: #194087;/*背景色*/
+    vertical-align: middle;
+    border-radius: 45px 45px 45px 45px;/*左側の角を丸く*/
+  }
+  

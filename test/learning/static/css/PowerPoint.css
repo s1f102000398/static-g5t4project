@@ -1,0 +1,40 @@
+h1 {
+    color: #ffffff;/*文字色*/
+    padding: 0.5em;/*文字周りの余白*/
+    display: inline-block;/*おまじない*/
+    line-height: 1.3;/*行高*/
+    background: hsl(0, 78%, 61%);/*背景色*/
+    vertical-align: middle;
+    border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+  }
+  
+  h1:before {
+    content: '●';
+    color: white;
+    margin-right: 8px;
+  }
+  
+  
+  a {
+    color: #505050;/*文字色*/
+    padding: 0.5em;/*文字周りの余白*/
+    display: inline-block;/*おまじない*/
+    line-height: 1;/*行高*/
+    background: #f88787;/*背景色*/
+    vertical-align: middle;
+    border-radius: 25px 25px 25px 25px;/*左側の角を丸く*/
+  }
+  
+  h2 {
+    border-bottom: solid 3px #cce4ff;
+    position: relative;
+  }
+  
+  h2:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #f62b2b;
+    bottom: -3px;
+    width: 20%;
+  }

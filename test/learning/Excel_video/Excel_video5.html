@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>実習3</title>
+    <link href="{% static 'css/Excel_video.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>動画5 Excel《行・列の選択》</h1><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QY3H9Mzto00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>※本動画では キー と ボタン は同一の意味として扱います</p>
+    <h2>説明</h2>
+    <p>・列を選択したい場合、<b>CtrlキーとSpaceキーを押してください。</b>
+    <br>・行を選択したい場合、<u>半角モードで</u><b>ShiftキーとSpaceキーを同時に押してください。</b></p>
+    <br>
+    <a href="{% url 'Excel_video4' %}">戻る</a>
+    <a href="{% url 'Excel_video6' %}">次へ</a>
+    <a href="{% url 'Excel' %}">動画教材一覧へ戻る</a>
+    <a href="{% url 'home' %}">homeへ戻る</a>
+  </body>
+</html>

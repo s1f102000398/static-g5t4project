@@ -1,0 +1,18 @@
+#button {
+    color: #fff;
+    font-size: 20px;
+    background-color: #eb6100;
+    background: #f56500;
+    border-radius: 25px 25px 25px 25px;/*左側の角を丸く*/
+  }
+  
+  
+  a {
+    color: #505050;/*文字色*/
+    padding: 0.5em;/*文字周りの余白*/
+    display: inline-block;/*おまじない*/
+    line-height: 1;/*行高*/
+    background: #96d5d3;/*背景色*/
+    vertical-align: middle;
+    border-radius: 25px 25px 25px 25px;/*左側の角を丸く*/
+  }

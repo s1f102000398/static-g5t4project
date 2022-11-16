@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="{% static 'css/word.css' %}" rel="stylesheet">
+    <title>実習3</title>
+  </head>
+
+  <body>
+    <h1>Word 動画教材</h1>
+    
+    <h2>動画教材一覧</h2>
+    <a href="{% url 'Word_video1' %}">文字検索</a>
+    <a href="{% url 'Word_video2' %}">中央揃え, 右揃え, 左揃え</a>
+    <a href="{% url 'Word_video3' %}">単語選択</a>
+    <a href="{% url 'Word_video4' %}">単語削除, 巻き戻し, やり直し</a>
+    <a href="{% url 'Word_video5' %}">太字, 斜体, 下線</a>
+    <a href="{% url 'Word_video6' %}">ファイルを開く, 白紙を出す, 保存する</a>
+    <a href="{% url 'Word_video7' %}">コピー&ペースト</a>
+
+    
+    <h2>確認クイズ</h2>
+    <a href="https://forms.gle/whEPRQi4KFNJc2zKA" target="_blank" rel="norefferrer">確認クイズ①(別ウィンドウ)</a>
+    <a href="https://forms.gle/viGabCeMCZkPYFgk7" target="_blank" rel="norefferrer">確認クイズ②(別ウィンドウ)</a>
+    <br>
+    <h2>その他教材</h2>
+    <a href="{% url 'PowerPoint' %}">PowerPoint 動画教材</a>
+    <a href="{% url 'Excel' %}">Excel 動画教材</a>
+    <h2>Homeに戻る</h2>
+    <a href="{% url 'home' %}">Home</a>
+  </body>
+</html>

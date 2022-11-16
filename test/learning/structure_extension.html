@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>拡張子QUIZ!</title>
+    <link href="{% static 'css/structure.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>
+      拡張子QUIZ!
+    </h1>
+
+    <p>
+      ここではよく目にする拡張子をいくつか紹介するよ！<br>
+      拡張子について知ってクイズに挑戦しよう！
+    </p>
+
+    <table>
+      <tr>
+        <th>拡張子</th> <th>説明</th>
+      </tr>
+      
+      <tr>
+        <td>.txt</td> <td>テキスト形式のファイル</td>
+      </tr>
+      <tr>
+        <td>.jpg</td> <td>スマホやデジカメなどの写真ファイルに一番よく使われている拡張子</td>
+      </tr>
+      <tr>
+        <td>.png</td> <td>jpgと同じくフルカラーで表現できる拡張子。カラーの描写がとても綺麗で 何度も上書きしても画質が劣化しない。</td>
+      </tr>
+      <tr>
+        <td>.gif</td> <td>図形や線、文字やロゴと言った色変化の少ない画像に適しており、ファイルサイズもとても軽く、<br>透過する事もできるので、Web上でのデザインには欠かせない拡張子</td>
+      </tr>
+      <tr>
+        <td>.pdf</td> <td>印刷物と同じようにレイアウトされたファイルをパソコンやスマートフォンで表示できるように設計されたものの拡張子</td>
+      </tr>
+      <tr>
+        <td>.exe</td> <td>ダブルクリックするとプログラムが実行されるファイル</td>
+      </tr>
+      <tr>
+        <td>.zip</td> <td>ファイルを圧縮した際につく拡張子のひとつ</td>
+      </tr>
+      <tr>
+        <td>.html</td> <td>htmlという、Webページを作成するための言語が使われたファイル</td>
+      </tr>
+      <tr>
+        <td>.css</td> <td>Webページに使われているファイル。スタイルシートと呼ばれている。</td>
+      </tr>
+      <tr>
+        <td>.mp3</td> <td>音楽などの音響データに使われている拡張子</td>
+      </tr>
+      <tr>
+        <td>.mpeg</td> <td>動画データのみを保存しているファイルの拡張子</td>
+      </tr>
+      <tr>
+        <td>.mp4</td> <td>動画にmpeg4＋音声にmp3を統合したファイルの拡張子</td>
+      </tr>
+      <tr>
+        <td>.avi</td> <td>マイクロソフトが開発した動画用のフォーマット。Windowsで使われる事が多い。</td>
+      </tr>
+      <tr>
+        <td>.wmv</td> <td>Windows ユーザー間では馴染み深い拡張子でストリーミング再生向けに作られた動画形式。</td>
+      </tr>
+    </table>
+<!--https://code-kitchen.dev/html/table/-->
+
+
+    <br>
+    <h2>
+      QUIZ!
+    </h2>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf561P6FM89OcN4RRQEM3LgSWAAvrfj4MLi9yn8RRGYT1gXYw/viewform?usp=sf_link">確認クイズ１</a><br>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScnnljuZQJ_01IZdaQPkXyZOOHMz75cXZ6oEuK-rZkuvdGOOw/viewform?usp=sf_link">確認クイズ２</a><br>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqBqxEE-1RTzJCrXREJvaoxijhRugGNx1pmG0qV0BWPd2u4g/viewform?usp=sf_link">確認クイズ３</a><br>
+     
+    <br>
+    <hr>
+    <a href="{% url 'structure' %}">拡張子や階層構造(データの管理等)に戻る</a><br>
+
+    <a href="{% url 'home' %}">homeへ</a>
+    <br><br><br><br><br><br>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>実習3</title>
+    <link href="{% static 'css/Excel_video.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>動画6 Excel 《セルのコピー&ペースト》</h1><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8mNRGQpXeI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>※本動画では キー と ボタン は同一の意味として扱います</p>
+    <h2>説明</h2>
+    <p>・セルをコピーしたい場合、<u>コピーしたいセルを選択して、</u><b>CtrlボタンとCボタンを同時に押してください。</b>
+    <br>・セルをペーストしたい場合、<u>ペーストしたいセルを選択して、</u><b>CtrlボタンとVボタンを同時に押してください。</b></p>
+    <br>
+    <a href="{% url 'Excel_video5' %}">戻る</a>
+    <a href="{% url 'Excel' %}">動画教材一覧へ戻る</a>
+    <a href="{% url 'home' %}">homeへ戻る</a>
+  </body>
+</html>

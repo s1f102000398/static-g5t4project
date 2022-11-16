@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+        <link href="{% static 'css/typing.css' %}" rel="stylesheet">
+        <title>タイピングゲーム</title>
+        
+<script>
+var words =  ["apple","banana","melon","mango","strawberry","blueberry","orange"];
+var Japanese_words = ["りんご","バナナ","メロン","マンゴー","いちご","ブルーベリー","オレンジ"];
+
+//初期設定, 変数定義
+    var time_limit = 10;
+    var Good;
+    var bad;
+    var length = 0;
+    var word_judge;
+    var random;
+
+//ゲーム開始のカウントダウン
+    function ready(){
+        var countdown = 3;
+        result.innerHTML="";
+        button.style.visibility ="hidden";
+//カウント減らす
+        var herasu = setInterval(function(){
+            count.innerHTML=countdown;
+            countdown--;
+            if(countdown < 0){
+                clearInterval(herasu);
+                start();}
+        },1000);}
+
+// ゲームの開始、初期設定
+    function start(){
+        bad = 0;
+        Good = 0;
+        wordDisplay();
+        var t2 = time_limit;
+//減らす動作
+        var herasu = setInterval(function(){
+            count.innerHTML="Time："+ t2;
+            t2--;
+            if(t2 <= 0){
+            clearInterval(herasu);
+                finish();}
+        },1000);
+    }
+//問題表示
+ function wordDisplay(){
+        random = Math.floor( Math.random() * words.length );
+        word.innerHTML = words[random];
+        
+        japanese.innerHTML = Japanese_words[random];
+        charInsort();
+    }
+
+    function charInsort(){
+        word_judge = words[random].charAt(length);
+    }
+
+//終了、正答率の確認
+    function finish(){
+        result.innerHTML = "<hr>Good!!:"+Good+"<br>bad:"+bad+"<br>正答率"+(Good/(Good+bad)*100).toFixed(1)+"%";
+        count.innerHTML = "";
+        word.innerHTML = "";
+        japanese.innerHTML = "";
+        button.style.visibility = "visible";
+    }
+
+document.onkeydown = function(e) {
+//例外
+    if(e.keyCode == 189){
+       keyStr = "-";
+    }    
+    if(e.keyCode == 188){
+        keyStr = ","
+    }
+//打ち込みを読み込む基本
+    else{
+        var keyStr = String.fromCharCode(e.keyCode);
+        keyStr = keyStr.toLowerCase();
+    }
+
+//正解は色を変化させる。
+    if(keyStr == word_judge){
+        word.innerHTML = "<span style='color: red;'>"+words[random].substr(0,length+1)+"</span>"+words[random].substr(length+1,words[random].length);
+        length++;
+        Good++;
+        charInsort();
+       }
+    else{
+        bad++;
+    }
+//完答
+    if(length == words[random].length){
+        length = 0;
+       }
+};
+
+</script>
+</head>
+
+<body>
+    <div class="Start_button">
+            <input type="button" id="button" value="start" onclick="ready()" style="text-align: center">
+            <div id="count"></div>
+                <h3><div id="japanese"></div></h3>
+                <h1><div id="word"></div></h1>
+            <div id="result"></div>
+    </div>
+	<a href="{% url 'home' %}">メニュー画面に戻る</a>
+</body>
+
+</html>

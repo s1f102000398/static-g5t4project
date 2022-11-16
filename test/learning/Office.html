@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="{% static 'css/office2.css' %}" rel="stylesheet">
+    <title>OfficeTools</title>
+  </head>
+
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+    <h1>OfficeTools</h1>
+
+    <h2>学びたいOfficeToolsを選んでね</h2>
+    
+    <a href="{% url 'Excel' %}">Excelへ</a><br>
+    <a href="{% url 'PowerPoint' %}">PowerPointへ</a><br>
+    <a href="{% url 'Word' %}">Wordへ</a>
+  
+    <br>
+
+    <a href="{% url 'home' %}">homeへ</a>
+    </div>
+
+  </body>
+</html>

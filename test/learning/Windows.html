@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="{% static 'css/office2.css' %}" rel="stylesheet">
+    <title>実習3</title>
+  </head>
+
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+
+    <h1>Windows  動画教材</h1>
+
+    <p>確認クイズ</p>
+    <a href="{% url 'structure' %}">拡張子や階層構造(データの管理等)</a>
+
+    <p>動画教材一覧</p>
+    <a href="{% url 'Windows_video1' %}">ウィンドウの整理, 拡大, 縮小</a>
+    <a href="{% url 'Windows_video2' %}">スクリーンショット</a>
+    <a href="{% url 'Windows_video3' %}">ファイル操作, 作成, 削除, 検索</a>
+    <a href="{% url 'Windows_video4' %}">設定画面の表示, アプリの表示</a>
+    <a href="{% url 'home' %}">homeへ</a>
+    </div>
+  </body>
+</html>
