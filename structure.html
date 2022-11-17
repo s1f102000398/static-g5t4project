@@ -1,11 +1,9 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>拡張子と階層構造</title>
-    <link href="{% static 'css/structure.css' %}" rel="stylesheet">
+    <link href="static/css/structure.css" rel="stylesheet">
   </head>
 
   <body>
@@ -21,14 +19,14 @@
       例えば、一口に動画ファイル、画像ファイルと言っても、実際にはそれぞれに様々な形式（フォーマット）のファイルが存在します。<br>
     </p>
 
-    <img src="{% static 'image\structure1.png' %}" width="800">    
+    <img src="static/image/structure1.png" width="800">    
   
     <p>
       拡張子は、ファイルの種類を示す役割を持っており、これを確認すれば、<br>
       そのファイルがどんなファイルなのか分かるようになっています。
     </p><br>
 
-    <img src="{% static 'image\structure2.png' %}" width="400">    
+    <img src="static/image/structure2.png" width="400">    
 
     <p>
       拡張子は、ファイルの名前と.（ドット）で区切られており、.（ドット）以降の部分が拡張子と呼ばれる部分、<br>
@@ -47,11 +45,11 @@
       改めて「.」の前の部分だけを変更しましょう。
     </p>
     
-    <img src="{% static 'image\structure3.png' %}" width="400">    
+    <img src="static/image/structure3.png" width="400">    
 
     <br><br>
     <p>下記ページで代表的な拡張子の紹介をしているよ！拡張子を知ってQUIZに挑戦しよう！</p>
-    <a href="{% url 'structure_extension' %}">拡張子QUIZ!</a>
+    <a href="structure_extension.html">拡張子QUIZ!</a>
   
     <br><br><hr>
     <h2>階層構造</h2>
@@ -81,7 +79,7 @@
     </p>
 
     
-    <img src="{% static 'image\structure4.png' %}" width="550">    
+    <img src="static/image/structure4.png" width="550">    
 
     <p>
       階層構造では以上のように、講義フォルダの中に数学フォルダがあることを、<br>
@@ -105,8 +103,8 @@
       ただし、環境によってはパスの区切り記号に逆スラッシュや円記号が使われる場合もあります。
     </p>
 
-    <img src="{% static 'image\structure5.png' %}" width="550">    
-    <img src="{% static 'image\structure6.png' %}" width="550">    
+    <img src="static/image/structure5.png" width="550">    
+    <img src="static/image/structure6.png" width="550">    
 
     <p>
       エクスプローラで上部に表示される、現在開いているフォルダの場所を示すバーでは、<br>
@@ -118,19 +116,19 @@
 
     <br>
     <p>下記ページから、想定されたフォルダを作ることができるか挑戦してみよう！</p>
-    <a href="{% url 'structure_game' %}">階層構造演習ページ</a>
+    <a href="structure_game.html">階層構造演習ページ</a>
     
     
     
     
     <br><hr>
 
-    <a href="{% url 'structure_extension' %}">拡張子QUIZ!</a>
+    <a href="structure_extension.html">拡張子QUIZ!</a>
     <a href="{% url 'structure_game' %}">階層構造演習ページ</a>
 
     <br>
 
-    <a href="{% url 'home' %}">homeへ</a>
+    <a href="home.html">homeへ</a>
     <br><br><br><br><br><br>
   </body>
 </html>
