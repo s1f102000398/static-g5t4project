@@ -1,11 +1,9 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>拡張子QUIZ!</title>
-    <link href="{% static 'css/structure.css' %}" rel="stylesheet">
+    <link href="../static/css/structure.css" rel="stylesheet">
   </head>
 
   <body>
@@ -79,9 +77,9 @@
      
     <br>
     <hr>
-    <a href="{% url 'structure' %}">拡張子や階層構造(データの管理等)に戻る</a><br>
+    <a href="structure.html">拡張子や階層構造(データの管理等)に戻る</a><br>
 
-    <a href="{% url 'home' %}">homeへ</a>
+    <a href="index.html">homeへ</a>
     <br><br><br><br><br><br>
   </body>
 </html>
