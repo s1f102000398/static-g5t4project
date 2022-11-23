@@ -1,9 +1,8 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <link href="{% static 'css/office2.css' %}" rel="stylesheet">
+    <link href="static/css/PowerPoint.css" rel="stylesheet">
     <title>OfficeTools</title>
   </head>
 
@@ -16,13 +15,13 @@
 
     <h2>学びたいOfficeToolsを選んでね</h2>
     
-    <a href="{% url 'Excel' %}">Excelへ</a><br>
-    <a href="{% url 'PowerPoint' %}">PowerPointへ</a><br>
-    <a href="{% url 'Word' %}">Wordへ</a>
+    <a href="Excel.html">Excelへ</a><br>
+    <a href="PowerPoint.html">PowerPointへ</a><br>
+    <a href="Word.html">Wordへ</a>
   
     <br>
 
-    <a href="{% url 'home' %}">homeへ</a>
+    <a href="index.html">homeへ</a>
     </div>
 
   </body>

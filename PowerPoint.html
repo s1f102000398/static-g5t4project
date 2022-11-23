@@ -1,9 +1,8 @@
-{% load static %} 
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <link href="{% static 'css/PowerPoint.css' %}" rel="stylesheet">
+    <link href="static/css/PowerPoint.css" rel="stylesheet">
     <title>実習3</title>
   </head>
 
@@ -11,21 +10,21 @@
     <h1>PowerPoint  動画教材</h1>
 
     <h2>動画教材一覧</h2>
-    <a href="{% url 'PowerPoint_video1' %}">全てを選択</a>
-    <a href="{% url 'PowerPoint_video2' %}">切り抜き, ペースト</a>
-    <a href="{% url 'PowerPoint_video3' %}">書式のコピー & 貼り付け</a>
-    <a href="{% url 'PowerPoint_video4' %}">まとめて選択</a>
-    <a href="{% url 'PowerPoint_video5' %}">ファイルの上書き保存</a>
-    <a href="{% url 'PowerPoint_video6' %}">スライドの複製</a>
-    <a href="{% url 'PowerPoint_video7' %}">グループ化と解除</a>
+    <a href="PowerPoint_video/PowerPoint_video1.html">全てを選択</a>
+    <a href="PowerPoint_video/PowerPoint_video2.html">切り抜き, ペースト</a>
+    <a href="PowerPoint_video/PowerPoint_video3.html">書式のコピー & 貼り付け</a>
+    <a href="PowerPoint_video/PowerPoint_video4.html">まとめて選択</a>
+    <a href="PowerPoint_video/PowerPoint_video5.html">ファイルの上書き保存</a>
+    <a href="PowerPoint_video/PowerPoint_video6.html">スライドの複製</a>
+    <a href="PowerPoint_video/PowerPoint_video7.html">グループ化と解除</a>
     <h2>確認クイズ</h2>
     <a href="https://forms.gle/gw341sdrPcGKmCwTA"  target="_blank" rel="norefferrer">確認クイズ①(別ウィンドウ)</a>
     <a href="https://forms.gle/RTpb9uMn7vG2Az8q7"  target="_blank" rel="norefferrer">確認クイズ②(別ウィンドウ)</a>
     <h2>その他教材</h2>
-    <a href="{% url 'Excel' %}">Excel 動画教材</a>
-    <a href="{% url 'Word' %}">Word 動画教材</a>
+    <a href="Excel.html">Excel 動画教材</a>
+    <a href="Word.html">Word 動画教材</a>
     <h2>Homeに戻る</h2>
-    <a href="{% url 'home' %}">Home</a>
+    <a href="index.html">Home</a>
  
   </body>
 </html>
