@@ -10,7 +10,7 @@ var words =  ["apple","banana","melon","mango","strawberry","blueberry","orange"
 var Japanese_words = ["りんご","バナナ","メロン","マンゴー","いちご","ブルーベリー","オレンジ"];
 
 //初期設定, 変数定義
-    var time_limit = 10;
+    var time_limit = 60;
     var Good;
     var bad;
     var length = 0;
@@ -41,7 +41,7 @@ var Japanese_words = ["りんご","バナナ","メロン","マンゴー","いち
         var herasu = setInterval(function(){
             count.innerHTML="Time："+ t2;
             t2--;
-            if(t2 <= 0){
+            if(t2 <= -2){
             clearInterval(herasu);
                 finish();}
         },1000);
