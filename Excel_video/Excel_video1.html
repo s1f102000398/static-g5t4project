@@ -1,10 +1,9 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>実習3</title>
-    <link href="{% static 'css/Excel_video.css' %}" rel="stylesheet">
+    <link href="../static/css/Excel_video.css" rel="stylesheet">
   </head>
 
   <body>
@@ -15,8 +14,8 @@
     <h2>説明</h2>
     <p>セルの選択をしたい場合、<b>Shiftキーと矢印キーを同時に押してください。</b></p>
     <br>
-    <a href="{% url 'Excel_video2' %}">次へ</a>
-    <a href="{% url 'Excel' %}">動画教材一覧へ戻る</a>
-    <a href="{% url 'home' %}">homeへ戻る</a>
+    <a href="Excel_video2.html">次へ</a>
+    <a href="../Excel.html">動画教材一覧へ戻る</a>
+    <a href="../index.html">homeへ戻る</a>
   </body>
 </html>

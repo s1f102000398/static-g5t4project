@@ -1,9 +1,8 @@
-{% load static %} 
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <link href="{% static 'css/midashi_Excel.css' %}" rel="stylesheet">
+    <link href="static/css/midashi_Excel.css" rel="stylesheet">
     <title>実習3</title>
   </head>
 
@@ -16,12 +15,12 @@
     <h1>Excel 動画教材</h1>
 
     <h2>動画教材一覧</h2>
-    <a href="{% url 'Excel_video1' %}">セルの選択</a>
-    <a href="{% url 'Excel_video2' %}">シートの追加</a>
-    <a href="{% url 'Excel_video3' %}">シートの移動</a>
-    <a href="{% url 'Excel_video4' %}">直前の作業を無かった事にする</a>
-    <a href="{% url 'Excel_video5' %}">行・列の選択</a>
-    <a href="{% url 'Excel_video6' %}">セルのコピー＆ペースト</a>
+    <a href="Excel_video/Excel_video1.html">セルの選択</a>
+    <a href="Excel_video/Excel_video2.html">シートの追加</a>
+    <a href="Excel_video/Excel_video3.html">シートの移動</a>
+    <a href="Excel_video/Excel_video4.html">直前の作業を無かった事にする</a>
+    <a href="Excel_video/Excel_video5.html">行・列の選択</a>
+    <a href="Excel_video/Excel_video6.html">セルのコピー＆ペースト</a>
 
     <br>
     <h2>確認クイズ</h2>
@@ -29,11 +28,11 @@
 
     <br>
     <h2>その他教材</h2>
-    <a href="{% url 'PowerPoint' %}">PowerPoint 動画教材</a>
-    <a href="{% url 'Word' %}">Word 動画教材</a>
+    <a href="PowerPoint.html">PowerPoint 動画教材</a>
+    <a href="Word.html">Word 動画教材</a>
     <br>
     <h2>Homeに戻る</h2>
-    <a href="{% url 'home' %}">Home</a>
+    <a href="index.html">Home</a>
     </div>
   </body>
 </html>
