@@ -15,4 +15,5 @@
     background: #96d5d3;/*背景色*/
     vertical-align: middle;
     border-radius: 25px 25px 25px 25px;/*左側の角を丸く*/
+    text-decoration:none;
   }

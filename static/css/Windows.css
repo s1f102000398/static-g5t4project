@@ -66,6 +66,7 @@ h1 {
     background: #99ebf9;/*背景色*/
     vertical-align: middle;
     border-radius: 25px 25px 25px 25px;/*左側の角を丸く*/
+    text-decoration:none;
   }
   
   h2 {

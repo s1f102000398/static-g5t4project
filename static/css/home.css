@@ -84,5 +84,6 @@ h1 {
     background: #194087;/*背景色*/
     vertical-align: middle;
     border-radius: 45px 45px 45px 45px;/*左側の角を丸く*/
+    text-decoration:none;
   }
   
